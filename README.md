@@ -1,2 +1,2 @@
 # burnsrock.github.io
-Portfolio page (in progress)
+Portfolio page for Bernardo (in progress)
