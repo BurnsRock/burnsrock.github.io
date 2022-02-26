@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="B_logo.svg" type="image/x-icon">
+    <title>Bernard's Site</title>
+    <style>
+        :root{
+            --primary-color:#3b30b0;
+            --secondary-color:#5245b0;
+            --ternary-color:#6e68b0;
+            --fournary-color:#d8d5ff;
+        }
+
+        html,body{
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #fampic {
+            width: 100%;
+        }
+
+        #headlogo {
+            width: 4em;
+            height: 4em;
+        }
+
+        header{
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        header h1{
+            background-color: var(--primary-color);
+            color: white;
+            margin: auto auto auto 1em ;
+        }
+
+        .header-divider{
+            margin:0px;
+            height: 5px;
+            background: var(--ternary-color);
+        }
+
+        main {
+            background-image: url("paper_family.jpg");
+            /*background-size: contain;*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 80%
+        }
+
+        footer{
+            margin: 0px;
+            height: max(fit-content,10%);
+            background:  var(--fournary-color);
+
+            width: 100%;
+        }
+        footer > *{
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header style="display: flex;flex-flow: row wrap;">
+        <img id="headlogo" src="./B_logo.svg" alt="Letter B"> 
+        <h1>Bernard's Site</h1>
+    </header>
+    <hr class="header-divider">
+
+    <main>
+        <div class="img-center-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam voluptates explicabo debitis, eum laboriosam autem laborum sequi, nemo ea quibusdam eaque, ut dolore iusto at temporibus fugit voluptatum natus! Eligendi, consequatur autem. Non sequi exercitationem voluptatum itaque quibusdam dolorum rem expedita blanditiis ea maiores amet quidem inventore alias labore nostrum, corporis saepe. Praesentium dolorem dolorum voluptatem at perferendis commodi ducimus cumque omnis aut quis. Architecto sint recusandae nisi, tempore ducimus eum? Cupiditate consectetur placeat fuga perferendis? Corporis accusamus facere nobis, odio voluptates, quam dolore, expedita rem eveniet architecto incidunt earum tempore debitis enim id placeat molestias. Recusandae, consequuntur voluptatum.
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>All images taken from commons.wikimedia.org, under the creative commons license</p>
+    </footer>
+</body>
+</html>
