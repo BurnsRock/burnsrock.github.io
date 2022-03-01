@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            font-size: x-large;
+        }
+    </style>
+    
+    <script src="mkTable.js" type="module"></script>
+    
+</head>
+
+<body>
+    <form action="">
+        <table style="border: 0px;">
+            <thead>
+                <th></th>
+                <th>Task Details</th>
+            </thead>
+            <tr>
+                <td>
+                    <label for="task">Task: </label>
+                </td>
+                <td>
+                    <input type="text" name="task" id="task" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Date: </label>
+
+                </td>
+                <td>
+                    <input type="date" name="date" id="date">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="time">Time: </label>
+
+                </td>
+                <td>
+                    <input type="time" name="time" id="time">
+
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="window.mkTable()" type="button">Wepa</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="tasks"></div>
+
+    <script>
+        function test(params) {
+            
+            let attrs = ["task","date","time"]
+            let values = ["celebrar cumple","2022-03-08","15:17"]
+            // Created a map which holds key value pairs
+            let task = {}
+            for (let i=0; i<3; i++) {
+                document.querySelector("#" + attrs[i]).value = values[i]
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
